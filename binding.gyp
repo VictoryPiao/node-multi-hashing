@@ -32,6 +32,7 @@
                 "src/x15.c",
                 "src/x16r.c",
                 "src/x16rv2.c",
+                "src/x17.c",
                 "src/crypto/argon2/argon2.c",
                 "src/crypto/argon2/core.c",
                 "src/crypto/argon2/encoding.c",

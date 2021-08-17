@@ -34,6 +34,7 @@ extern "C" {
     #include "x15.h"
     #include "x16r.h"
     #include "x16rv2.h"
+    #include "x17.h"
     #include "neoscrypt.h"
     #include "crypto/argon2/argon2.h"
     #include "crypto/yescrypt/yescrypt.h"
@@ -104,6 +105,7 @@ using namespace v8;
  DECLARE_CALLBACK(x15, x15_hash, 32);
  DECLARE_CALLBACK(x16r, x16r_hash, 32);
  DECLARE_CALLBACK(x16rv2, x16rv2_hash, 32);
+ DECLARE_CALLBACK(x17, x17_hash, 32);
  DECLARE_CALLBACK(yescrypt, yescrypt_hash, 32);
 
 DECLARE_FUNC(argon2d) {
@@ -420,6 +422,7 @@ NAN_MODULE_INIT(init) {
     NAN_EXPORT(target, x15);
     NAN_EXPORT(target, x16r);
     NAN_EXPORT(target, x16rv2);
+    NAN_EXPORT(target, x17);
     NAN_EXPORT(target, neoscrypt);
     NAN_EXPORT(target, yescrypt);
 }
