@@ -107,9 +107,9 @@ void x17_hash(const char* input, char* output, uint32_t len)
 	sph_sha512(&ctx_sha512,(const void*) hash, 64);
 	sph_sha512_close(&ctx_sha512,(void*) hash);
 
-	sph_haval256_5_init(&ctx_haval);
-	sph_haval256_5(&ctx_haval,(const void*) hash, 64);
-	sph_haval256_5_close(&ctx_haval, hash);
+	// sph_haval256_5_init(&ctx_haval);
+	// sph_haval256_5(&ctx_haval,(const void*) hash, 64);
+	// sph_haval256_5_close(&ctx_haval, hash);
 
 	memcpy(output, hash, 32);
 
